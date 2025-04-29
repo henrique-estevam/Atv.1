@@ -1,0 +1,8 @@
+a = int(input("Digite o primeiro valor inteiro: "));
+b = int(input("Digite o segundo valor inteiro: "));
+c = 0;
+if a == b:
+    c = a + b;
+else:
+    c = a * b;
+print("O valor de C é {}.".format(c));
