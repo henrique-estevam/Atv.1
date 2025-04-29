@@ -1,0 +1,11 @@
+a = int(input("Digite o primeiro valor: "));
+b = int(input("Digite o segundo valor: "));
+c = int(input("Digite o terceiro valor: "));
+soma = a + b;
+print("A soma entre {} e {} é {}.".format(a, b, soma));
+if soma < c:
+    print("{} é menor que {}.".format(soma, c));
+if soma > c:
+    print("{} é maior que {}.".format(soma, c));
+else:
+    print("Os valores de {} e {} são iguais.".format(soma, c));
