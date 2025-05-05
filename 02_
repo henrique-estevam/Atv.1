@@ -1,1 +1,11 @@
 a = int(input("Digite um número: "));
+b = a % 2;
+if b == 0:
+    print("O número {} é par.".format(a));
+else:
+    print("O número {} é impar.".format(a));
+
+if a > 0:
+    print("O número {} é positivo.".format(a));
+else:
+    print("O número {} é negativo.".format(a));
