@@ -1,0 +1,26 @@
+def getvalideztriangulo(A, B, C):
+  if A + B <= C or A + C <= B or B + C <= A: 
+    return "Inválido";
+  else:
+    return "Válido";
+
+def gettipotriangulo(A, B, C):
+  if A == B == C:
+    return "Equilátero";
+  elif A == B or B == C or A == C:
+    return 'Isósceles';
+  else:
+    return 'Escaleno';
+
+print("Digite abaixo, separados por linha, um valor para cada lado de um triângulo.");
+ladoA = float(input('-> '));
+ladoB = float(input('-> '));
+ladoC = float(input('-> '));
+
+valideztriangulo = getvalideztriangulo(ladoA, ladoB, ladoC);
+tipotriangulo = gettipotriangulo(ladoA, ladoB, ladoC);
+
+if valideztriangulo == 'Inválido':
+  print(f'Um triângulo com as medidas {ladoA}, {ladoB} e {ladoC} não poderia existir.');
+else:
+  print(f'Com base nos seus lados, o triângulo é do tipo {tipotriangulo}. \nLados: {ladoA}, {ladoB}, {ladoC}');
