@@ -1,0 +1,13 @@
+from datetime import datetime
+
+anoatual = datetime.now().year;
+mesatual = datetime.now().month;
+diaatual = datetime.now().day;
+
+anonasc = int(input("Digite o seu ano de nascimento: "));
+
+anosdvd = anoatual - anonasc;
+mesesdvd = mesatual - 1;
+diasdvd = diaatual - 1;
+
+print(f'Você tem {anosdvd} ano(s), {mesesdvd} mês(es) e {diasdvd} dia(s)!');
