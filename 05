@@ -1,2 +1,4 @@
-min = 1.518,00;
-us = input("Digite seu salário: ");
+min = 1518;
+us = float(input("Digite seu salário: "));
+salmins = us / min;
+print("Você ganha cerca de {:.1f} salários mínimos.".format(salmins));
