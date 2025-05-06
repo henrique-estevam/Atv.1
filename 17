@@ -1,0 +1,5 @@
+tempF = float(input("Digite uma temperatura em Fahrenheit (°F): "));
+tempC = 5 * (tempF - 32) / 9;
+
+print("Temperatura em Fahrenheit (°F):", tempF);
+print("Temperatura em Celsius (°C):", tempC);
