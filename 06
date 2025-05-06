@@ -1,0 +1,3 @@
+a = int(input("Digite um valor qualquer: "));
+porcen = a + a * 5 / 100;
+print("O valor {} reajustado em 5% é {}.".format(a, porcen));
