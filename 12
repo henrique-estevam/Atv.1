@@ -1,0 +1,24 @@
+prodval = float(input("Digite o valor do produto: "));
+esc = int(input(
+    "Escolha a forma de pagamento:\n"
+    "1 - À Vista em Dinheiro ou Pix (15% de desconto)\n"
+    "2 - À Vista no cartão de crédito (10% de desconto)\n"
+    "3 - Parcelado no cartão em 2 vezes (sem juros)\n"
+    "4 - Parcelado no cartão em 3 vezes ou mais (10% de juros)\n"
+    "Digite o código da forma de pagamento: "
+));
+
+if esc == 1:
+    final = prodval * 0.85;
+elif esc == 2:
+    final = prodval * 0.90;
+elif esc == 3:
+    final = prodval;
+elif esc == 4:
+    final = prodval * 1.10;
+else:
+    print("Escolha inválida.");
+    final = None;
+
+if final is not None:
+    print("Valor a ser pago: R$ {:.2f}".format(final));
