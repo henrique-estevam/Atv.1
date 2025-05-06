@@ -1,0 +1,14 @@
+# Faça um algoritmo que leia dois valores booleanos (lógicos) e determine se 
+# ambos são VERDADEIRO ou FALSO. Sendo o numero 1 Verdadeiro e 0 Falso. 
+
+a = int(input("Digite o valor de 0 ou 1: "));
+b = int(input("Digite novamente 0 ou 1: "));
+
+if a == 1 and b == 1:
+    print("Ambos os valores são verdadeiros.");
+elif a == 0 and b == 0:
+    print("Ambos os valores são falsos.");
+elif a == 1 and b == 0:
+    print("{} é verdadeiro e {} é falso.".format(a, b));
+else:
+    print("{} é falso e {} é verdadeiro.".format(a, b));
