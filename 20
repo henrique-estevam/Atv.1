@@ -1,0 +1,9 @@
+valor = int(input('Insira um valor inteiro: '));
+
+for iN, N in enumerate(range(1, 11)):
+  if (iN + 1) % 2 == 0:
+    end = '\n'
+  else:
+    end = '\t'
+
+  print(f'{valor} x {N} = {valor * N}', end=end);
