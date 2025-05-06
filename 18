@@ -1,0 +1,21 @@
+Francisco = {
+  "altura": 150,
+  "crescimentoPorAno": 2
+}
+Sara = {
+  "altura": 110,
+  "crescimentoPorAno": 3
+}
+
+anosPassados = 0;
+
+while True:
+  Sara["altura"] += 2
+  anosPassados += 1
+
+  if Sara["altura"] > Francisco["altura"]:
+    break
+
+print(f'Serão necessários {anosPassados} anos para Sara ser maior do que Francisco.');
+print(f'Altura de Sara daqui a {anosPassados} anos: {Sara["altura"] / 100}m');
+print(f'Altura de Francisco daqui a {anosPassados} anos: {Francisco["altura"] / 100}m');
